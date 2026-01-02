@@ -1,0 +1,332 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANKIT|Portfolio</title>
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <h2 class="t-white">AW.</h2>
+        </div>
+        <div class="centre-nav">
+            <ul class="flex">
+                <li><a href="#home" class="t-white roboto">Home <i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#about" class="t-white roboto">About Me <i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#skills" class="t-white roboto">Skills <i class="fa-solid fa-code"></i></a></li>
+                <li><a href="#Projects" class="t-white roboto">Projects <i class="fas fa-project-diagram"></i></a></li>
+                <li><a href="#Contact" class="t-white roboto">Contact <i class="fa-solid fa-rocket"></i></a></li>
+            </ul>
+        </div>
+        <div class="right-nav">
+            <ul class="flex s-center w-80 font-awesome ">
+            <a href="www.linkedin.com/in/ankit-wade-4619b9247" target="_blank">
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+            </a>
+            <a href="github.com/Ankitwade" target="_blank">
+                <li><i class="fa-brands fa-github"></i></li>
+            </a>
+                <a href="https://www.instagram.com/ankitwade16?utm_source=qr" target="_blank">
+                    <li><i class="fa-brands fa-instagram"></i></li>
+            </a>
+            </a>
+                <a href="" target="_blank">
+                    <li><i class="fa-brands fa-x-twitter"></i></li>
+            </a>  
+            </a>
+                <a href="https://leetcode.com/u/ankitwade1612/" target="_blank">
+                    <li><i class="fa-solid fa-code"></i></li>
+            </a>  
+        </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="flex s-around sw-80 m-auto">
+        <div class="home-left flex items-center">
+            <div class="home-content">
+                <h5 class="poppinss">Hi, I'm</h5>
+                <h1 class="t-white">Ankit Wade</h1>
+                <h4 class="poppinss">Engineering Student</h4>
+                <a href="{% static 'pdf/resume.pdf' %}"  target="_blank">
+                    <button class="btn poppins">Resume</button></a>
+                    
+                <a class="btn poppins" id="hireme" href="#Contact"
+                    target="_blank">Let's Talk</a>
+            </div>
+        </div>
+        <div class="home-right flex s-center items-center">
+            <div class="circle flex s-center items-center" id="mainImage">
+               
+                <img src="{% static 'images/pic.png'%}" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1 class="t-center my-2 t-white f-2">About Me</h1>
+        <div class="about-container flex s-around ">
+            <div class=" about-left flex s-center items-center">
+            </div>
+
+            <div class="about-right flex">
+                <div class="about-content">
+                    <h1 class="t-white m-b-1 poppins">Ankit wade</h1>
+                    <p class="t-white poppins">I am Ankit Wade, a final-year engineering student at IET DAVV, Indore, driven by a passion for technology and innovation. As a proactive learner and dedicated problem-solver, I specialize in exploring emerging tools to build creative, real-world solutions.I pride myself on my ability to bridge the gap between theoretical knowledge and practical application. Whether I am mastering a new programming language or experimenting with modern frameworks, my goal is always to create impactful projects that solve complex challenges. I am eager to leverage my technical skills and hardworking mindset to contribute to the evolving tech landscape.</p>
+                    <a class="btn " id="hireme"
+                        href="#Contact">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section-->
+    <section id="skills" class="p-3">
+    <h1 class="t-center my-2 t-white f-2">Technical Expertise</h1>
+    
+    <div class="skills-grid flex s-around wrap">
+        
+        <div class="skill-card">
+            <h3 class="t-white my-1">Languages</h3>
+            <ul class="skill-list t-white">
+                <li>Python <span class="dot"></span></li>
+                <li>C++</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3 class="t-white my-1">Web Development</h3>
+            <ul class="skill-list t-white">
+                <li>HTML5 & CSS3 <span class="dot"></span></li>
+                <li>Django / Flask</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3 class="t-white my-1">Core Concepts</h3>
+            <ul class="skill-list t-white">
+                <li>Data Structures (DSA)</li>
+                <li>DBMS (MySQL)</li>
+                <li>Operating Systems</li>
+                <li>Object Oriented Programming</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3 class="t-white my-1">Tools</h3>
+            <ul class="skill-list t-white">
+                <li>Git & GitHub</li>
+                <li>VS Code</li>
+                <li>Figma/Canva</li>
+                <li>Excel/Tableau</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3 class="t-white my-1">Tools</h3>
+            <ul class="skill-list t-white">
+                <li>Project Management</li>
+                <li>Client Handeling</li>
+                <li>Analytical Thinking</li>
+                <li>Problem Solving</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- Experince section-->
+<section id="experience" class="p-3">
+    <h1 class="t-center my-2 t-white f-2">Professional Journey</h1>
+    
+    <div class="experience-grid flex s-around wrap gap-2">
+        
+        <div class="exp-card">
+            <div class="exp-header">
+                <i class="fa-solid fa-briefcase exp-icon"></i>
+                <div>
+                    <h3 class="t-gold">President</h3>
+                    <p class="t-white poppins">E-CELL, IET DAVV</p>
+                </div>
+            </div>
+            <ul class="exp-list t-white poppins no-bullets">
+                <li><i class="fa-solid fa-chevron-right"></i> Leading a team of 150+ members to foster innovation and entrepreneurship.</li>
+                <li><i class="fa-solid fa-chevron-right"></i> Executed 30+ events impacting over 1000 individuals across 25+ departments.</li>
+            </ul>
+        </div>
+
+        <div class="exp-card">
+            <div class="exp-header">
+                <i class="fa-solid fa-code-branch exp-icon"></i>
+                <div>
+                    <h3 class="t-gold">Head Coordinator</h3>
+                    <p class="t-white poppins">TEC CLUB, IET DAVV</p>
+                </div>
+            </div>
+            <ul class="exp-list t-white poppins no-bullets">
+                <li><i class="fa-solid fa-chevron-right"></i> Led 50+ individuals to foster a technical and programming environment.</li>
+                <li><i class="fa-solid fa-chevron-right"></i> Collaborated with leading coding platforms to organize contests.</li>
+            </ul>
+        </div>
+
+        <div class="exp-card">
+            <div class="exp-header">
+                <i class="fa-solid fa-lightbulb exp-icon"></i>
+                <div>
+                    <h3 class="t-gold">Head Management Officer</h3>
+                    <p class="t-white poppins">IIC DAVV</p>
+                </div>
+            </div>
+            <ul class="exp-list t-white poppins no-bullets">
+                <li><i class="fa-solid fa-chevron-right"></i> Guided startups using insights from top founders like Anubhav Dubey.</li>
+                <li><i class="fa-solid fa-chevron-right"></i> Organized 10+ mentorship programs providing resources and initial funding.</li>
+            </ul>
+        </div>
+
+        <div class="exp-card">
+            <div class="exp-header">
+                <i class="fa-solid fa-seedling exp-icon"></i>
+                <div>
+                    <h3 class="t-gold">Founder and Mentor</h3>
+                    <p class="t-white poppins">ANKUR IMS DAVV</p>
+                </div>
+            </div>
+            <ul class="exp-list t-white poppins no-bullets">
+                <li><i class="fa-solid fa-chevron-right"></i> Shaped the club's vision and conducted 100+ interviews for membership.</li>
+                <li><i class="fa-solid fa-chevron-right"></i> Guiding the establishment of the club's structure and networking base.</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- Projects Section -->
+    <section id="Projects">
+        <h1 class=" t-center my-2 t-white f-2">Projects</h1>
+        <div class="projects-container flex s-center">
+            <div class="projects-item flex f-col s-center items-center">
+               
+                <h1 class="t-white poppins">My Portfolio</h1>
+                <p class="t-white poppins">This is My portfolio website which is created with HTML,CSS and Django which describe my skill and knowledge.My portfolio website showcases my work in a sleek and minimalist design, allowing the focus to be on the content itself. The layout is uncluttered, making it easy for visitors to navigate and explore my projects.</p>
+                <div class="buttons flex s-around">
+                    <a href="" target="_blanks"
+                        class="btn mx-1 m-top">GitHub</a>
+                    <a href="#" target="_blanks" class="btn m-top live">Live
+                        Link</a>
+                </div>
+            </div>
+
+            <div class="projects-item flex f-col s-center items-center">
+               
+                <h1 class="t-white poppins">Virtual Asistant(Deva)</h1>
+                <p class="t-white poppins"> Deva is a sophisticated Python-based virtual assistant that enables seamless computer interaction through voice commands. By integrating advanced speech recognition, text-to-speech, and Google’s Gemini AI, it delivers intelligent, conversational responses. It serves as a powerful bridge between human intent and machine execution, simplifying tasks through smart automation.</p>
+                <div class="buttons flex s-around">
+                    <a href=""
+                        target="_blanks" class="btn mx-1 m-top">GitHub</a>
+                    <a href="" target="_blanks" class="btn m-top live">Live
+                        Link</a>
+                </div>
+            </div>
+           
+         </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="Contact" class="m-b-1">
+        <h1 class=" t-center my-2 t-white f-2">Contact Me</h1>
+        <div class="contact-container flex s-around items-centers">
+            <div class="form" id="contactForm">
+                <form method="post" > 
+                    {% csrf_token %}
+                    <div class="name form-div">
+                        <input type="text" name="name" id="name" class="poppins" placeholder="Enter Your Name">
+                    </div>
+
+                    <div class="email form-div">
+                        <input type="email" name="email" id="" class="poppins" placeholder="Enter Your Email"
+                            required>
+                    </div>
+
+                    <div class="phone form-div">
+                        <input type="phone" name="number" id="" class="poppins" placeholder="Enter Your Phone"
+                            required>
+                    </div>
+                    
+                    <div class="textarea form-div">
+                        <textarea name="content" id="textarea" cols="30" rows="10" class="poppins"
+                            placeholder="Enter Messages"></textarea>
+                    </div>
+                    <button type="submit" class="btn poppins" id="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="p-3">
+  <div class="footer-content m-auto w-80">
+
+    <!-- Social Links -->
+    <div class="footer-socials flex s-center gap-3 my-3">
+      <a href="https://www.linkedin.com/in/ankit-wade-4619b9247"
+         target="_blank"
+         rel="noopener"
+         class="social-icon"
+         aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+
+      <a href="https://github.com/Ankitwade"
+         target="_blank"
+         rel="noopener"
+         class="social-icon"
+         aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+
+      <a href="https://www.instagram.com/ankitwade16?utm_source=qr"
+         target="_blank"
+         rel="noopener"
+         class="social-icon"
+         aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+
+      <a href="mailto:ankitwade1612@gmail.com"
+         class="social-icon"
+         aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+
+      <a href="tel:+919752827393"
+         class="social-icon"
+         aria-label="Phone">
+        <i class="fa-solid fa-phone"></i>
+      </a>
+    </div>
+
+    <hr class="footer-line">
+
+    <!-- Copyright -->
+    <p class="t-center my-2 poppins t-grey footer-text">
+      © <span id="year"></span> | Designed & Built by
+      <span class="t-white highlight-name">Ankit Wade</span>
+    </p>
+
+  </div>
+</footer>
+
+<!-- Auto Year Script -->
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
